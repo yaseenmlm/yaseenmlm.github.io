@@ -139,12 +139,12 @@
       "liveDemo": "",
       "screenshots": [
         {
-          "file": "sentiment-overview.webp",
-          "alt": "Pie and bar chart of tweet sentiment: 1189 neutral, 535 negative, 280 positive"
+          "file": "brand-pulse-overview.webp",
+          "alt": "Brand Pulse dashboard for Amazon: 2,004 tweets, 58 topics, sentiment donut chart and love-versus-hate bar chart by topic"
         },
         {
-          "file": "umap-embedding.webp",
-          "alt": "UMAP scatter plot of tweet embeddings coloured by sentiment"
+          "file": "brand-pulse-topic-explorer.webp",
+          "alt": "Brand Pulse topic explorer showing top keywords and sentiment counts for one topic"
         }
       ],
       "video": ""
@@ -168,8 +168,12 @@
       "liveDemo": "",
       "screenshots": [
         {
-          "file": "validation-results.webp",
-          "alt": "Validation results: confusion matrix, training versus validation loss, and accuracy and F1 per epoch"
+          "file": "tweet-radar-analyze.webp",
+          "alt": "Disaster Tweet Radar classifying a tweet as a real disaster with a probability gauge and word-level influence"
+        },
+        {
+          "file": "tweet-radar-model-report.webp",
+          "alt": "Disaster Tweet Radar model report with accuracy, F1, confusion matrix and training curves"
         }
       ],
       "video": ""
