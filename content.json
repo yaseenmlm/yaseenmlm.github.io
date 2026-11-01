@@ -107,9 +107,18 @@
         "Zod",
         "JavaScript"
       ],
-      "repo": "",
+      "repo": "https://github.com/yaseenmlm/clinic-intake",
       "liveDemo": "",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "file": "language-picker.webp",
+          "alt": "Language picker screen offering English, French, Punjabi and Hindi"
+        },
+        {
+          "file": "intake-hindi.webp",
+          "alt": "Intake question in Hindi asking for date of birth, step 2 of 8"
+        }
+      ],
       "video": ""
     },
     {
@@ -126,9 +135,18 @@
         "Transformers",
         "NLP"
       ],
-      "repo": "",
+      "repo": "https://github.com/yaseenmlm/Machine-Learning-Projects",
       "liveDemo": "",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "file": "sentiment-overview.webp",
+          "alt": "Pie and bar chart of tweet sentiment: 1189 neutral, 535 negative, 280 positive"
+        },
+        {
+          "file": "umap-embedding.webp",
+          "alt": "UMAP scatter plot of tweet embeddings coloured by sentiment"
+        }
+      ],
       "video": ""
     },
     {
@@ -146,9 +164,14 @@
         "DistilBERT",
         "Python"
       ],
-      "repo": "",
+      "repo": "https://github.com/yaseenmlm/Machine-Learning-Projects",
       "liveDemo": "",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "file": "validation-results.webp",
+          "alt": "Validation results: confusion matrix, training versus validation loss, and accuracy and F1 per epoch"
+        }
+      ],
       "video": ""
     },
     {

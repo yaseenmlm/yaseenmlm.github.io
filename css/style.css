@@ -85,8 +85,9 @@ h3 { font: 400 1.9rem/1.1 var(--serif); margin: 0; }
 .tags { display: flex; flex-wrap: wrap; gap: .25rem 1rem; list-style: none; margin: 1.1rem 0 0; padding: 0; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .links { display: flex; flex-wrap: wrap; list-style: none; margin: 1.1rem 0 0; padding: 0; font: .85rem var(--mono); }
 .links li + li::before { content: "/"; color: var(--muted); margin: 0 .6rem; }
-.shots { display: grid; grid-auto-flow: column; grid-auto-columns: min(80%, 22rem); gap: .75rem; overflow-x: auto; margin: 1rem 0; }
-.shots img, .project video { width: 100%; height: auto; border: 1px solid var(--line); display: block; }
+.shots { display: flex; gap: .75rem; overflow-x: auto; margin: 1rem 0; padding-bottom: .25rem; }
+.shots img { height: 18rem; width: auto; max-width: none; flex: none; background: #fff; border: 1px solid var(--line); display: block; }
+.project video { width: 100%; height: auto; border: 1px solid var(--line); display: block; }
 .project video { margin: 1rem 0; }
 
 .job .dates { font-size: .78rem; letter-spacing: .08em; color: var(--accent); margin: 0 0 .25rem; }
