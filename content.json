@@ -173,27 +173,6 @@
         }
       ],
       "video": ""
-    },
-    {
-      "slug": "bmc-qubotix",
-      "title": "BMC Qubotix",
-      "badge": "",
-      "subtitle": "AI test automation dashboard. Built at BMC Software.",
-      "description": [
-        "Gives QA engineers real-time test case performance and feedback loops: a React/TypeScript frontend, Node.js/Flask REST APIs, LLM-driven script generation with LangChain, and Playwright executing the generated scripts. It is internal, so there is no public link or screenshot."
-      ],
-      "tags": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Flask",
-        "LangChain",
-        "Playwright"
-      ],
-      "repo": "",
-      "liveDemo": "",
-      "screenshots": [],
-      "video": ""
     }
   ],
   "skills": [
