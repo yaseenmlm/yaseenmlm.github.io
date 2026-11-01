@@ -1,19 +1,10 @@
-@font-face {
-  font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap;
-  src: url("../assets/fonts/InstrumentSerif-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap;
-  src: url("../assets/fonts/InstrumentSerif-Italic.ttf") format("truetype");
-}
-
 :root {
   --bg: #f5f5f3;
   --ink: #171717;
   --muted: #5c5c58;
   --line: #d9d9d4;
   --accent: #1d6b3a;
-  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --serif: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   color-scheme: light;
@@ -125,3 +116,44 @@ h3 { font: 400 1.9rem/1.1 var(--serif); margin: 0; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* Blueprint: drawing-sheet frames over a faint grid, bold sans display. */
+:root { --grid: rgba(29, 107, 58, .08); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --grid: rgba(127, 220, 158, .06); } }
+:root[data-theme="dark"] { --grid: rgba(127, 220, 158, .06); }
+
+body {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+main { width: min(100% - 2rem, 54rem); }
+
+section {
+  position: relative; margin-top: 2.5rem; padding: 2.25rem 1.5rem 1.5rem;
+  border: 1px solid var(--ink); background: var(--bg);
+}
+section::before, section::after {
+  content: ""; position: absolute; width: 10px; height: 10px; background: var(--accent);
+}
+section::before { top: -5px; right: -5px; }
+section::after { bottom: -5px; left: -5px; }
+.hero { padding-top: 2.5rem; margin-top: 3rem; }
+
+h1 { font: 800 clamp(3rem, 11vw, 5.5rem)/.9 var(--sans); letter-spacing: -.05em; text-transform: uppercase; }
+.tagline { font: 700 clamp(1.3rem, 4vw, 1.8rem)/1.2 var(--sans); font-style: normal; letter-spacing: -.02em; }
+.tagline::before { content: "▸ "; }
+
+h2 {
+  position: absolute; top: -.85rem; left: 1rem; margin: 0; padding: .1rem .6rem; border: 1px solid var(--ink);
+  background: var(--bg); font: 500 .75rem var(--mono); letter-spacing: .14em; text-transform: uppercase;
+}
+h3 { font: 700 1.35rem/1.2 var(--sans); letter-spacing: -.02em; }
+.project, .job { border-bottom: 1px dashed var(--muted); }
+.project::before { content: "FIG. " counter(p, decimal-leading-zero); letter-spacing: .1em; }
+.tags li { border: 1px solid var(--line); padding: .05rem .45rem; }
+.badge { border: 1px solid var(--accent); padding: .1rem .5rem; }
+.skills div { border-bottom: 1px dashed var(--muted); }
+.edu, .skills { margin-bottom: 0; }
+.foot { text-align: center; }
