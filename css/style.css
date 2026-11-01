@@ -105,8 +105,9 @@ h3 { font: 400 1.9rem/1.1 var(--serif); margin: 0; }
 .edu .dates { font: .78rem var(--mono); letter-spacing: .08em; color: var(--accent); margin: 0 0 .25rem; }
 .edu p { margin: 0; }
 
-.mail { font: 400 clamp(1.5rem, 6.5vw, 2.6rem)/1.1 var(--serif); margin: 0 0 1rem; overflow-wrap: anywhere; }
-.mail a { text-decoration-thickness: 1px; }
+.mail { font: 600 clamp(1.15rem, 5vw, 1.9rem)/1.3 var(--mono); letter-spacing: -.02em; margin: 0 0 1rem; overflow-wrap: anywhere; }
+.mail a { text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: .1em; }
+.mail a:hover { color: var(--accent); }
 .notice { padding: 1rem; border: 1px dashed var(--accent); }
 .foot { padding: 5rem 0 2.5rem; font-size: .75rem; color: var(--muted); }
 .foot p { margin: 0 0 .25rem; }
