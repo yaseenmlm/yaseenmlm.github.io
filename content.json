@@ -117,6 +117,10 @@
         {
           "file": "intake-hindi.webp",
           "alt": "Intake question in Hindi asking for date of birth, step 2 of 8"
+        },
+        {
+          "file": "patient-review.webp",
+          "alt": "Review screen listing the patient's answers with a Change button on each and a Send to the doctor button"
         }
       ],
       "video": ""
