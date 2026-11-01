@@ -1,0 +1,161 @@
+{
+  "site": {
+    "baseUrl": "https://yaseenmalam.dev",
+    "title": "Yaseen Malam | I automate things.",
+    "description": "Yaseen Malam: Computing (AI) and Economics student at Queen's and AI Engineer at QMIND, building AI-powered software and data tools that cut manual work.",
+    "resumeFile": "assets/Yaseen_Malam_Resume.pdf"
+  },
+  "hero": {
+    "eyebrow": "Computing (AI) · Economics · Queen's University · Kingston, ON",
+    "name": "Yaseen Malam",
+    "tagline": "I automate things.",
+    "subhead": "AI/ML and data tools at BMO, BMC, and QMIND.",
+    "intro": [
+      "I'm a Computing (AI) and Economics student at Queen's and an AI Engineer at QMIND, building AI-powered software and data tools that cut manual work. This past summer I was a Data Analyst Intern in BMO's Corporate Audit group (Audit AI and Analytics), where I built an automated audit-testing pipeline in Python on AWS SageMaker and an AWS Bedrock LLM workflow that turned a manual procedure into a reproducible service. The summer before, at BMC, I built Qubotix, a test automation dashboard that generates and runs tests with LangChain and Playwright.",
+      "On my own time I build the projects below: a lecture library that won its track at KingHacks 2026, a clinic intake app that works in four languages, and two NLP projects on tweets. If you want to talk about any of it, please email me."
+    ],
+    "resumeLabel": "Résumé"
+  },
+  "links": {
+    "github": "https://github.com/yaseenmlm",
+    "linkedin": "https://www.linkedin.com/in/yaseenmalam",
+    "email": "yaseenmalam1@gmail.com"
+  },
+  "experience": [
+    {
+      "role": "AI Engineer",
+      "org": "QMIND",
+      "dates": "Oct 2026 – Present",
+      "bullets": [
+        "Building a multi-agent harness with WSP to generate engineering diagrams."
+      ],
+      "tags": []
+    },
+    {
+      "role": "Data Analyst Intern, Corporate Audit (Audit AI & Analytics)",
+      "org": "BMO",
+      "dates": "May – Aug 2026",
+      "bullets": [
+        "Built an automated audit-testing pipeline in Python on AWS SageMaker, cutting auditors' manual review time by 65%.",
+        "Implemented an AWS Bedrock LLM workflow that turned a manual audit procedure into a reproducible service with fixed prompt templates, reducing preparation and validation effort by 50%; 95% of outputs agreed with auditors' conclusions.",
+        "Automated a multi-stage approval workflow in Power Apps, Power Automate, and SharePoint for a prompt library, saving 5 hours of approval time per item."
+      ],
+      "tags": ["Python", "AWS SageMaker", "AWS Bedrock", "Power Apps", "Power Automate", "SharePoint"]
+    },
+    {
+      "role": "Digital Content Coordinator (volunteer)",
+      "org": "Queen's University Muslim Student Association",
+      "dates": "May 2025 – Apr 2026",
+      "bullets": [
+        "Directed, filmed, and acted in original video content across the MSA's social media platforms.",
+        "Managed the full content process from ideation to final production.",
+        "Promoted community engagement and built an authentic online presence for the MSA."
+      ],
+      "tags": []
+    },
+    {
+      "role": "Software Engineer Intern",
+      "org": "BMC Software",
+      "dates": "May – Aug 2025",
+      "bullets": [
+        "Orchestrated LLM-driven test script generation with LangChain for BMC Qubotix; 85% of 120 generated scripts ran green without edits.",
+        "Integrated Playwright to execute generated scripts automatically, enabling continuous, hands-off validation of AI-generated tests.",
+        "Built the full stack of the Qubotix dashboard: a React/TypeScript frontend and Node.js/Flask REST APIs that show script changes and pass/fail rates live."
+      ],
+      "tags": ["React", "TypeScript", "Node.js", "Flask", "LangChain", "Playwright"]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "qu-lecture-library",
+      "title": "QU Lecture Library",
+      "badge": "Hackathon winner",
+      "subtitle": "Lecture recordings to searchable study material. KingHacks 2026 track winner.",
+      "description": [
+        "Students upload lecture recordings by course code, then search their course to find any lecture with its AI-generated notes, flashcards and quizzes in one place. The backend is a Fastify REST API with Prisma/SQLite and Zod validation, documented in OpenAPI, behind a React/Vite/Tailwind frontend.",
+        "The upload-to-notes pipeline runs ElevenLabs speech-to-text for timestamped transcripts, then an OpenAI note generator via Python/LangChain, with an end-to-end smoke test. Built with a team of 4 and tested end to end on 40 lectures."
+      ],
+      "tags": ["TypeScript", "React", "Fastify", "Prisma", "SQLite", "Python"],
+      "repo": "",
+      "liveDemo": "",
+      "screenshots": [],
+      "video": ""
+    },
+    {
+      "slug": "doctor-ai-summary",
+      "title": "Doctor AI Summary",
+      "badge": "",
+      "subtitle": "Multilingual clinic intake with an AI-organized summary for the doctor.",
+      "description": [
+        "Patients answer on a phone or tablet in English, French, Punjabi or Hindi. The doctor sees an AI-organized English summary beside every original answer, with its translation.",
+        "Summary and translation run as separate temperature-0 model calls (Gemini or Claude), with an automated check that flags any medication or number missing from the summary. Data is encrypted at rest (AES-256-GCM), auto-deleted after 24 hours, and covered by 10 automated tests."
+      ],
+      "tags": ["Node.js", "Express", "Gemini API", "Zod", "JavaScript"],
+      "repo": "",
+      "liveDemo": "",
+      "screenshots": [],
+      "video": ""
+    },
+    {
+      "slug": "bertopic-tweet-pipeline",
+      "title": "BERTopic Company Tweet Sentiment & Topic Pipeline",
+      "badge": "",
+      "subtitle": "Topic modelling and sentiment for company-related tweets.",
+      "description": [
+        "An NLP pipeline using BERTopic and transformer-based sentiment analysis to find the main topics and sentiment trends in company-related tweets. It turns noisy social media text into interpretable topic clusters."
+      ],
+      "tags": ["Python", "BERTopic", "Transformers", "NLP"],
+      "repo": "",
+      "liveDemo": "",
+      "screenshots": [],
+      "video": ""
+    },
+    {
+      "slug": "distilbert-disaster-tweets",
+      "title": "DistilBERT Disaster Tweet Classifier",
+      "badge": "",
+      "subtitle": "Real disaster reports versus everything else. Kaggle NLP competition.",
+      "description": [
+        "Fine-tuned DistilBERT (67M parameters) on 7,613 labelled tweets, reaching 81.5% accuracy and 0.81 weighted F1 on 1,142 held-out tweets, against a TF-IDF + logistic regression baseline of 79%.",
+        "A confusion matrix and per-class analysis showed 0.76 recall on the minority class was the dominant failure, and the train/validation loss gap pointed to overfitting."
+      ],
+      "tags": ["PyTorch", "Hugging Face", "DistilBERT", "Python"],
+      "repo": "",
+      "liveDemo": "",
+      "screenshots": [],
+      "video": ""
+    },
+    {
+      "slug": "bmc-qubotix",
+      "title": "BMC Qubotix",
+      "badge": "",
+      "subtitle": "AI test automation dashboard. Built at BMC Software.",
+      "description": [
+        "Gives QA engineers real-time test case performance and feedback loops: a React/TypeScript frontend, Node.js/Flask REST APIs, LLM-driven script generation with LangChain, and Playwright executing the generated scripts. It is internal, so there is no public link or screenshot."
+      ],
+      "tags": ["React", "TypeScript", "Node.js", "Flask", "LangChain", "Playwright"],
+      "repo": "",
+      "liveDemo": "",
+      "screenshots": [],
+      "video": ""
+    }
+  ],
+  "skills": [
+    { "group": "Languages", "items": ["Python", "JavaScript", "TypeScript", "SQL", "Java", "C"] },
+    { "group": "ML / NLP", "items": ["PyTorch", "Hugging Face Transformers", "LangChain", "scikit-learn", "NumPy", "pandas"] },
+    { "group": "Full-stack", "items": ["React", "Node.js", "Flask", "REST APIs", "SQLite", "Playwright"] },
+    { "group": "Cloud & tools", "items": ["AWS (SageMaker, Bedrock)", "Git/GitHub", "Jupyter"] }
+  ],
+  "education": [
+    {
+      "school": "Queen's University",
+      "place": "Kingston, ON",
+      "degree": "BSc Computing (AI Option), Minor in Economics.",
+      "dates": "Sep 2024 – Apr 2028 (Expected)",
+      "tags": ["Data Structures & Algorithms", "Operating Systems", "Machine Learning", "Software Engineering"]
+    }
+  ],
+  "contact": {
+    "text": "Email is the best way to reach me."
+  }
+}

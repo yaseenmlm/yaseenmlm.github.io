@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+linkedin.md
+Yaseen_Malam_Resume_SWE*.pdf

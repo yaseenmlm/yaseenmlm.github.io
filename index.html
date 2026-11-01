@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yaseen Malam | I automate things.</title>
+  <meta name="description" content="Yaseen Malam: Computing (AI) and Economics student at Queen's and AI Engineer at QMIND, building AI-powered software and data tools that cut manual work.">
+  <link rel="canonical" href="https://yaseenmalam.dev/">
+  <meta name="theme-color" content="#f5f5f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yaseen Malam | I automate things.">
+  <meta property="og:description" content="AI/ML and data tools at BMO, BMC, and QMIND.">
+  <meta property="og:url" content="https://yaseenmalam.dev/">
+  <meta property="og:image" content="https://yaseenmalam.dev/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InstrumentSerif-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="#top" aria-label="Yaseen Malam, back to top">yaseenmlm</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#top">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme" class="icon-btn" type="button" aria-label="Toggle dark and light theme">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.5 0-.9-.1-1.3A6 6 0 0 1 12 3z"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-name">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1 id="hero-name">Yaseen Malam</h1>
+      <p class="tagline" id="tagline">I automate things.</p>
+      <p class="sub" id="subhead"></p>
+      <div class="intro" id="intro"></div>
+      <ul class="inline-links" id="hero-links"></ul>
+    </section>
+
+    <section id="projects" aria-labelledby="h-projects">
+      <h2 id="h-projects">Projects</h2>
+      <ol class="projects" id="project-list"></ol>
+    </section>
+
+    <section id="experience" aria-labelledby="h-experience">
+      <h2 id="h-experience">Experience</h2>
+      <ol class="jobs" id="timeline"></ol>
+    </section>
+
+    <section id="skills" aria-labelledby="h-skills">
+      <h2 id="h-skills">Skills</h2>
+      <dl class="skills" id="skill-groups"></dl>
+    </section>
+
+    <section id="education" aria-labelledby="h-education">
+      <h2 id="h-education">Education</h2>
+      <div id="education-list"></div>
+    </section>
+
+    <section id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">Contact</h2>
+      <p class="mail" id="contact-mail"></p>
+      <p id="contact-text"></p>
+    </section>
+
+    <noscript><p class="notice">This page loads its content with JavaScript. Email: yaseenmalam1@gmail.com</p></noscript>
+    <p class="notice" id="load-error" hidden>Couldn't load <code>content.json</code>. If you opened this file directly, serve the folder instead (e.g. <code>python -m http.server</code>).</p>
+  </main>
+
+  <footer class="foot"><p id="foot"></p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
