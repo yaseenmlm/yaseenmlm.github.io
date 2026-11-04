@@ -48,7 +48,7 @@
     kids.push(tagList(p.tags));
 
     var links = [];
-    if (p.liveDemo) links.push(link("Live demo", p.liveDemo, true));
+    if (p.liveDemo) links.push(link(p.liveLabel || "Live demo", p.liveDemo, true));
     if (p.repo) links.push(link("Source", p.repo, true));
     if (p.video && isUrl(p.video)) links.push(link("Video", p.video, true));
     if (links.length) kids.push(el("ul", { cls: "links" }, links));

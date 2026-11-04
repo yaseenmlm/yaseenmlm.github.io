@@ -92,6 +92,41 @@
       "video": ""
     },
     {
+      "slug": "pi-llm-inference",
+      "title": "LLM Inference on a Raspberry Pi 5",
+      "badge": "",
+      "subtitle": "Predicting LLM decode speed from memory bandwidth, then testing it on real hardware.",
+      "description": [
+        "Is LLM decode on edge hardware limited by memory bandwidth? I predicted tokens per second from measured read bandwidth and model size, then benchmarked 7 llama.cpp models on a Raspberry Pi 5. At 4 threads every model ran at 86-93% of the predicted ceiling, and none of the 25 configs exceeded it.",
+        "At fewer threads some models are limited by the CPU instead, so decode has two limits rather than one. A comparison on a desktop Ryzen 7 showed the same memory ceiling, plus a per-layer cost that grows with thread count."
+      ],
+      "tags": [
+        "Python",
+        "llama.cpp",
+        "Raspberry Pi",
+        "Benchmarking",
+        "Data analysis"
+      ],
+      "repo": "https://github.com/yaseenmlm/LLM-inference-characterization-raspi",
+      "liveDemo": "https://yaseenmalam.dev/LLM-inference-characterization-raspi/site/",
+      "liveLabel": "Interactive report",
+      "screenshots": [
+        {
+          "file": "roofline-4-threads.webp",
+          "alt": "Measured decode speed against the memory ceiling at 4 threads: all seven models sit at 86-93% of the ceiling"
+        },
+        {
+          "file": "two-limits.webp",
+          "alt": "Decode speed by thread count for Qwen Q2 and Q8, showing a CPU limit at low threads and a memory limit from the first thread"
+        },
+        {
+          "file": "pc-threads.webp",
+          "alt": "Decode speed by thread count on a desktop Ryzen 7 compared with the memory ceiling"
+        }
+      ],
+      "video": ""
+    },
+    {
       "slug": "doctor-ai-summary",
       "title": "Doctor AI Summary",
       "badge": "",
