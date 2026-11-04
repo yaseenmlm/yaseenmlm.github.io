@@ -1,21 +1,13 @@
 :root {
-  --bg: #f5f5f3;
-  --ink: #171717;
-  --muted: #5c5c58;
-  --line: #d9d9d4;
-  --accent: #1d6b3a;
+  --bg: #0f0f0e;
+  --ink: #ebebe8;
+  --muted: #9a9a95;
+  --line: #2a2a28;
+  --accent: #7fdc9e;
   --serif: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f0f0e; --ink: #ebebe8; --muted: #9a9a95; --line: #2a2a28; --accent: #7fdc9e; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0f0f0e; --ink: #ebebe8; --muted: #9a9a95; --line: #2a2a28; --accent: #7fdc9e; color-scheme: dark;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -44,11 +36,6 @@ code { font-family: var(--mono); font-size: .9em; }
 .bar nav { min-width: 0; }
 .bar nav a { color: var(--muted); text-decoration: none; display: inline-block; padding: .3rem 0; border-bottom: 1px solid transparent; }
 .bar nav a:hover, .bar nav a.on { color: var(--ink); border-bottom-color: var(--accent); }
-.icon-btn {
-  display: grid; place-items: center; width: 2.2rem; height: 2.2rem; flex: none; cursor: pointer;
-  background: none; color: var(--ink); border: 1px solid var(--line); border-radius: 50%;
-}
-.icon-btn:hover { border-color: var(--accent); color: var(--accent); }
 @media (max-width: 640px) { .brand { display: none; } .bar nav { margin-right: auto; } }
 
 main, .foot { width: min(100% - 2.5rem, 46rem); margin-inline: auto; }
@@ -120,9 +107,7 @@ h3 { font: 400 1.9rem/1.1 var(--serif); margin: 0; }
 }
 
 /* Blueprint: drawing-sheet frames over a faint grid, bold sans display. */
-:root { --grid: rgba(29, 107, 58, .08); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --grid: rgba(127, 220, 158, .06); } }
-:root[data-theme="dark"] { --grid: rgba(127, 220, 158, .06); }
+:root { --grid: rgba(127, 220, 158, .06); }
 
 body {
   background-image:

@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  var root = document.documentElement;
   var $ = function (id) { return document.getElementById(id); };
   var isUrl = function (s) { return /^https?:\/\//.test(s); };
 
@@ -143,15 +142,6 @@
     }, { rootMargin: "-40% 0px -55% 0px" });
     document.querySelectorAll("main section").forEach(function (sec) { io.observe(sec); });
   }
-
-  $("theme").addEventListener("click", function () {
-    var dark = root.dataset.theme
-      ? root.dataset.theme === "dark"
-      : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    var next = dark ? "light" : "dark";
-    root.dataset.theme = next;
-    try { localStorage.setItem("theme", next); } catch (e) {}
-  });
 
   fetch("content.json")
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

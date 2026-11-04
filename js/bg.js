@@ -71,6 +71,5 @@
   window.addEventListener("pointerdown", function (e) {
     if (e.pointerType === "touch") { target.x = pos.x = e.clientX; target.y = pos.y = e.clientY; goal = 1; kick(); }
   }, { passive: true });
-  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   resize();
 })();
