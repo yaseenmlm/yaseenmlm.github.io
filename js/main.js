@@ -76,9 +76,14 @@
 
     c.experience.forEach(function (j) {
       $("timeline").appendChild(el("li", { cls: "job reveal" }, [
-        el("p", { cls: "dates", text: j.dates }),
-        el("h3", { text: j.role }),
-        el("p", { cls: "org", text: j.org }),
+        el("div", { cls: "job-head" }, [
+          j.logo ? el("img", { cls: "logo", attrs: { src: j.logo, alt: j.org + " logo", width: "56", height: "56" } }) : null,
+          el("div", {}, [
+            el("p", { cls: "dates", text: j.dates }),
+            el("h3", { text: j.role }),
+            el("p", { cls: "org", text: j.org })
+          ])
+        ]),
         el("ul", { cls: "points" }, j.bullets.map(function (b) { return el("li", { text: b }); })),
         tagList(j.tags)
       ]));

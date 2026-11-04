@@ -159,3 +159,7 @@ h3 { font: 700 1.35rem/1.2 var(--sans); letter-spacing: -.02em; }
 .skills div { border-bottom: 1px dashed var(--muted); }
 .edu, .skills { margin-bottom: 0; }
 .foot { text-align: center; }
+
+.job-head { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1rem; }
+.job-head .org { margin-bottom: 0; }
+.logo { width: 3.5rem; height: 3.5rem; flex: none; object-fit: cover; border: 1px solid var(--ink); display: block; }

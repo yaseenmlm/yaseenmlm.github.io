@@ -29,7 +29,8 @@
       "bullets": [
         "Building a multi-agent harness with WSP to generate engineering diagrams."
       ],
-      "tags": []
+      "tags": [],
+      "logo": "assets/logos/qmind.png"
     },
     {
       "role": "Data Analyst Intern, Corporate Audit (Audit AI & Analytics)",
@@ -47,7 +48,8 @@
         "Power Apps",
         "Power Automate",
         "SharePoint"
-      ]
+      ],
+      "logo": "assets/logos/bmo.png"
     },
     {
       "role": "Software Engineer Intern",
@@ -65,7 +67,8 @@
         "Flask",
         "LangChain",
         "Playwright"
-      ]
+      ],
+      "logo": "assets/logos/bmc.svg"
     }
   ],
   "projects": [
